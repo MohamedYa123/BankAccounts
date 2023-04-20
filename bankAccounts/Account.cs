@@ -24,7 +24,11 @@ namespace bankAccounts
         public DateTime CreatedDate { get { return createddate; } set { checkClosed();createddate = value; } }
         public virtual void Deposit(double amount)
         {
-            throw new Exception("no deposit allowed");
+
+            if(type== "SalaryAccount")
+                throw new Exception("no deposit allowedon salary accounts");
+            checkClosed();
+            balance += amount;
         }
         public void Withdraw(double amount)
         {
@@ -58,27 +62,14 @@ namespace bankAccounts
     }
     public class LoanAccount : Account
     {
-        public override void Deposit(double amount)
-        {
-            checkClosed();
-            balance += amount;
-        }
 
     }
     public class SavingsAccount : Account
     {
-        public override void Deposit(double amount)
-        {
-            checkClosed();
-            balance += amount;
-        }
+
     }
     public class BasicAccount : Account
     {
-        public override void Deposit(double amount)
-        {
-            checkClosed();
-            balance += amount;
-        }
+       
     }
 }
