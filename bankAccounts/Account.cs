@@ -8,18 +8,27 @@ namespace bankAccounts
 {
     public abstract class Account
     {
+        protected void checkClosed()
+        {
+            if(IsClosed)
+            {
+                throw new Exception("Cannot to do operations on closed accounts");
+            }
+        }
         protected string type = "";
         public string Type { get { return type; } }
         protected double balance;
         public double Balance { get { return balance; } }
         public bool IsClosed { get; set; }
-        public DateTime CreatedDate { get; set; }
+        DateTime createddate;
+        public DateTime CreatedDate { get { return createddate; } set { checkClosed();createddate = value; } }
         public virtual void Deposit(double amount)
         {
             throw new Exception("no deposit allowed");
         }
         public void Withdraw(double amount)
         {
+            checkClosed();
             if(Balance>=amount)
             {
                 balance -= amount;
@@ -51,6 +60,7 @@ namespace bankAccounts
     {
         public override void Deposit(double amount)
         {
+            checkClosed();
             balance += amount;
         }
 
@@ -59,6 +69,7 @@ namespace bankAccounts
     {
         public override void Deposit(double amount)
         {
+            checkClosed();
             balance += amount;
         }
     }
@@ -66,6 +77,7 @@ namespace bankAccounts
     {
         public override void Deposit(double amount)
         {
+            checkClosed();
             balance += amount;
         }
     }

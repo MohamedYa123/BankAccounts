@@ -8,6 +8,7 @@
             RetailsCustomer retailsCustomer= new RetailsCustomer();
             retailsCustomer.FirstName = "Mohamed";
             retailsCustomer.LastName = "Yasser";
+            retailsCustomer.PhoneNumber= "+1234567890";
             //defining accounts
             LoanAccount loanAccount= new LoanAccount();
             SavingsAccount savingsAccount= new SavingsAccount();

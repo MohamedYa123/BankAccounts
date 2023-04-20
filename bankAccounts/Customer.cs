@@ -14,7 +14,7 @@ namespace bankAccounts
         {
             if (IsDeleted)
             {
-                throw new Exception("Cannot do operations on deleted accounts !");
+                throw new Exception("Cannot do operations on deleted Customers !");
             }
         }
         static  string onlyletters = "[a-zA-Z][a-zA-Z]+";
@@ -63,7 +63,7 @@ namespace bankAccounts
             } }
         public bool IsDeleted { get; set; }=false;
         
-        static string phonenumbereg= @"^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$";
+        static string phonenumbereg= @"^\+*\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$";
         static Regex phoneregex = new Regex(phonenumbereg);
         string phonenumber;
         public listofaccounts Accounts { get; set; }
@@ -205,7 +205,7 @@ namespace bankAccounts
                 }
                 else
                 {
-                    throw new Exception("Retalis account canot have a salary account");
+                    throw new Exception("Retalis account cannot have a salary account");
                 }
             }
         }
