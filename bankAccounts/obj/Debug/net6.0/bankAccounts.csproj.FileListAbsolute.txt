@@ -1,0 +1,15 @@
+G:\projects\C# Projects\bankAccounts\bankAccounts\bin\Debug\net6.0\bankAccounts.exe
+G:\projects\C# Projects\bankAccounts\bankAccounts\bin\Debug\net6.0\bankAccounts.deps.json
+G:\projects\C# Projects\bankAccounts\bankAccounts\bin\Debug\net6.0\bankAccounts.runtimeconfig.json
+G:\projects\C# Projects\bankAccounts\bankAccounts\bin\Debug\net6.0\bankAccounts.dll
+G:\projects\C# Projects\bankAccounts\bankAccounts\bin\Debug\net6.0\bankAccounts.pdb
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.csproj.AssemblyReference.cache
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.GeneratedMSBuildEditorConfig.editorconfig
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.AssemblyInfoInputs.cache
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.AssemblyInfo.cs
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.csproj.CoreCompileInputs.cache
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.dll
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\refint\bankAccounts.dll
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.pdb
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\bankAccounts.genruntimeconfig.cache
+G:\projects\C# Projects\bankAccounts\bankAccounts\obj\Debug\net6.0\ref\bankAccounts.dll
