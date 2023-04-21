@@ -10,6 +10,7 @@ namespace bankAccounts
 {
     public abstract class Customer
     {
+
         public void checkDelete()
         {
             if (IsDeleted)
@@ -63,7 +64,7 @@ namespace bankAccounts
             } }
         public bool IsDeleted { get; set; }=false;
         
-        static string phonenumbereg= @"^\+*\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$";
+        static string phonenumbereg= @"^\+?\(?([0-9]{3})\)?[-.● ]?([0-9]{3})[-.● ]?([0-9]{4})$";
         static Regex phoneregex = new Regex(phonenumbereg);
         string phonenumber;
         public listofaccounts Accounts { get; set; }
