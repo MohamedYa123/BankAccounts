@@ -29,6 +29,8 @@ namespace bankAccounts
         /// Rules :
         /// 1-only contains alphabetic letters
         /// 2-at least two letters are allowed
+        /// 3- only one type of letters allowed in the value like "mohamed" or "محمد"
+        /// not "moحمد"
         /// </summary>
         public string FirstName { get {
                 return firstname;
@@ -49,6 +51,8 @@ namespace bankAccounts
         /// Rules :
         /// 1-only contains alphabetic letters
         /// 2-at least two letters are allowed
+        /// 3- only one type of letters allowed in the value like "mohamed" or "محمد"
+        /// not "moحمد"
         /// </summary>
         public string LastName { get { return lastname; } set { 
             
